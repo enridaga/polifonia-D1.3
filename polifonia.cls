@@ -7,7 +7,7 @@
 %%---------------------------------------------------
 %\NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{polifonia}
-\LoadClass[a4paper,oneside,final,10pt,headings=small]{scrreprt}
+\LoadClass[a4paper,oneside,final,12pt,headings=small]{scrreprt}
 % --------------------------------------------
 % Load packages
 % --------------------------------------------
