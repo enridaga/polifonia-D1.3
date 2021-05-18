@@ -1,1 +1,45 @@
-\chapter{Methodology}
+\chapter{Methodology}\label{ch:methodology}
+
+The methodology used for the development of the pilots and the Polifonia ecosystem is inspired by agile software development methodologies \cite{collier2012agile}. Similar to those, our methodology focuses on ``discovering requirements and developing solutions through the collaborative effort of self-organising and cross-functional teams and their customer(s)/end user(s)''; in Polifonia, these cross-functional teams are organised by the various technology-oriented WPs (WP2 --knowledge graphs--, WP3 --music pattern discovery--, WP4 --text pattern discovery-- and WP5 --user interfaces--); while the customers/end users are represented by the various Pilots (WP1). Therefore, WPs and Pilots interact in an orthogonal way.
+
+This distributed, self-organised approach has several advantages, especially when confronted with a more traditional, waterfall-based model \cite{benington1983production}:
+
+\begin{itemize}
+    \item Does not enforce specific non-functional requirements to any of the development teams, such as programming languages, libraries, or frameworks; therefore minimising the chances of writing large, monolithic systems that are hard to document and maintain (especially after the end of the project)\todo{@all: add something about long-term sustainability? E.g. innovation task force in WP6}
+    \item Identifies and reduces dependencies between different Pilots
+    \item It is feature-driven, and puts the requirements from the Pilots at the forefront of the development process
+    \item Allows for incremental and frequent software releases under the open-source mantra ``release early, release often''
+    \item Increases decoupling and independence of components, since each component has autonomous value and can be used by and combined with other components (e.g. the Pilots and the Web Portal)
+    \item Increases opportunity for reuse of technical and scientific artefacts
+    \item Allows for a decentralised quality assurance process, where project-global metrics can be implemented in component-specific ways
+\end{itemize}
+
+In addition to these well-known benefits, we extend the methodology with the following procedures:
+
+\begin{enumerate}
+    \item \textbf{Sign-off release}. The release of new software components into the ecosystem must follow a code review, involving one or two code reviewers from a different team from the one that carried out the development. More specifically, this happens when a \emph{development branch} requests a \emph{merge with its main branch} via a \emph{pull request}; such a pull request must include a code review request to the aforementioned external reviewers \todo{@all: check this is how we want to do it?}
+    \item \textbf{Component development life-cycle}.
+    \item \textbf{Bottom-up approach}. Component development, and especially the gathering, documentation and maintenance of requirements for such components, are managed through the Polifonia \emph{maninpasta} sessions. This is a hackathon-like, grassroots approach that periodically ensures interaction between requirement providers in the Pilots, and software development teams in the technological WPs.
+    \item \textbf{Top-down approach}. WP leaders and TB members ensure that the bottom-up approach is aligned and converges, to the extent possible, to the goals established by Polifonia GA. This includes the establishment of WP checkpoints (e.g. previous to a milestone or a deliverable); and explicit breakdowns and plannings of how features, commits, releases, etc. align with the planning of WPs and their tasks. The TB synchronises and complements this top-down upservision in conjunction with the WP and Task leaders.
+\end{enumerate}
+
+\todo{Outline}
+WP and Pilots are Orthogonal 
+Goal: identify and reduce dependencies 
+Increase opportunity for reuse (scientific / technical) 
+
+Agile, feature-driven 
+
+Incremental releases: "release early, release often” 
+
+Decoupling / independence (each component has an autonomous value but *can* also be used with others, as exemplified in Pilots and Web Portal) 
+
+Quality assurance 
+
+Sign-Off release process, involving one or two code reviewers from another team 
+
+Component development lifecycle 
+
+Methodology Two-fold: 
+(a) Bottom-Up: Maninpasta / hackatons grassroots approach 
+(b) Top-Down: Checkpoint during WP, relation with WPs, tasks, etc … / Checkpoint on TB 

@@ -1,1 +1,76 @@
-\chapter{The Polifonia Ecosystem}
+\chapter{The Polifonia Ecosystem}\label{ch:ecosystem}
+
+
+\todo[inline, author=Enrico]{Background and motivation: we don't want to do a framework, frameworks are bad}
+The Polifonia Ecosystem is conceived as a collection of components which are both independent -- they have some value on their own -- and interlinked -- they can be combined in order to satisfy specific end-user needs.
+
+Data components types are the following:
+\begin{itemize}
+\item Registries -- indexes of resources of interest to Musical Cultural Heritage. A preliminary example is the MusoW catalogue of Musical Resources on the Web. Other registries can be developed to fit specific needs (for example, the catalogue of resources useful to the CHILD pilot)
+\item Ontologies -- produced in the context of the Polifonia project to support pilots and use cases, ontologies specify domain knowledge and are used for knowledge representation of Polifonia datasets
+\item Datasets -- structured data offered following best practices in (Linked) Open Data publishing. When possible, data is published in the original format as well as Linked Data, using Polifonia ontologies.
+\item Knowledge Graph -- a distributed but unifying view of musical cultural heritage knowledge, is a virtual composition of all the data objects produced to be reused for large scale integration, for example, to support unified indexes for exploration and discovery\todo[inline,author=Enrico]{To be discussed at the TB. We say that there will be 1 single KG aggregating everything, but I still think that the nature of the KG should be distributed and there can be one system which indexes the data to support some use cases such as discovery and reuse.}
+\item Services / Web APIs -- to expose reasoning and data processing capabilities, services are run by Polifonia consortium members and instantiate specific components to the Open Web. % “Towards an open Web experience, not a “Facebook” experience” 
+Among those there are Linked Data services such as SPARQL endpoints -- live data services publishing the above components for querying with SPARQL.
+\item Software libraries -- reusable code produced by the project to support pilot activities.Software libraries are used by programmers in their own applications
+\item CLI tools -- ready-made tools to be used by developers in scripting data manipulation pipelines
+\item User interfaces -- targeting domain experts, citizens, developed to support specific activities in the context of the Polifonia Pilots, user interfaces can be reused across similar applications targeting different data
+% \item User Interface components
+\item Stories -- requirements from the world of Musical Cultural Heritage preservation, exploitation, and scholarship; stories are the starting point of the collaborative methodology and the \textit{sense-making} layer of the Polifonia Ecosystemm, giving context and purpose to the components
+\item Tutorials -- a showcase of the Polifonia Ecosystem through end-to-end tutorials, inspired from the Pilots and displaying the capabilities of the components in concrete applications. Tutorials are also an excellent starting point for developers.
+\item Web Portal (a KG view on Polifonia) -- the aggregator of the Polifonia Knowledge, exploiting the Knowledge Graph as underlying integration method.
+\item Polifonia Ecosystem Documentation Website (GitHub) -- The resource for accessing the Polifonia Ecosystem, browsing the components and the documentation, accessing the resources for developers, and joining the project team in building the next generation of tools for Musical Cultural Heritage.
+\end{itemize}
+
+These component types are \textit{interlinked}. 
+
+Interoperation strategies: Web technologies (OpenAPI, SPARQL, Solid, URLs, …) 
+
+% Registry 
+
+% Datasets:
+
+% - Ontologies, published following best practices 
+
+% - SPARQL endpoints 
+
+Publishing guidelines
+
+- Life-cycle, Versioned Releases (on GitHub) 
+
+Software libraries:
+
+- Code quality 
+- Documentation  
+- Tutorials 
+- CLI 
+
+Services / Web APIs: “Towards an open Web experience, not a “Facebook” experience” 
+
+- Availability 
+
+- Good practices (e.g. OpenAPI specification) 
+
+- Documentation 
+
+- Tutorials
+
+User Interface components:
+
+- Good practices: (a) Linkable UI views; (b) Reusable snippets (Web Embed) 
+
+- Reusability of UI 
+
+Deployment strategies / Interoperability How tos / Demonstrators 
+
+- Recommendations and examples on how to reuse the components 
+
+- Recommendations on how to setup a docker components 
+
+Stories and Scenarios (linked to pipelines / demos / relevant components) 
+
+Web Portal (a KG view on Polifonia) 
+
+Polifonia Ecosystem Documentation Website (GitHub) 
+
+Publishing Polifonia Components: metadata

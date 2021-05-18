@@ -1,9 +1,8 @@
-\documentclass{polifonia}
+\documentclass[]{polifonia}
 \usepackage{ifthen}
 \usepackage[printonlyused,nohyperlinks]{acronym}
 \usepackage{units}
-
-\usepackage{todonotes}
+\usepackage[colorinlistoftodos]{todonotes}
 \usepackage[utf8]{inputenc}
 \usepackage{siunitx}
 \usepackage{subcaption}
@@ -101,13 +100,14 @@
 \pagestyle{plain}
 
 \input{chapters/introduction}
+\input{chapters/pilots}
 \input{chapters/technical-board}
 \input{chapters/methodology}
 \input{chapters/polifonia-ecosystem}
 \input{chapters/background-technologies}
-\input{chapters/polifonia-stories}
-\input{chapters/polifonia-registry}
-
+% \input{chapters/polifonia-stories}
+\input{chapters/collaboration-infrastructure}
+\input{chapters/conclusions}
 \bibliography{bib/references}
 % \appendix
 % \input{chapters/appendix-A}
