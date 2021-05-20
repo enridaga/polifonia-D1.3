@@ -1,65 +1,23 @@
-\chapter{Pilots and Web Portal}\label{ch:pilot}
+\chapter{Pilots}\label{ch:pilot}
 \todo[inline, author=Enrico]{Move to the end?}
-This section provides an introduction to the Polifonia pilots and Web portal to provide the context to the collaborative methodology and tools.
-\section{Web portal: an aggregator of digital musical heritage collections}\label{sec:pilot:portal}
-\todo[inline,author=Enrico]{Shall we move this into a separate section?}
-%\todo[inline]{Please provide a summary of the pilot objectives, beneficiaries, and a description of the work done so far, with particular reference to collaborative work and exchange of expertise.}
-
-The Polifonia Web portal is designed to be the main access point to data collections produced in the pilots. 
-The objectives of the portal are threefold: (1) to provide user-friendly interfaces and let the general public access valuable information on musical heritage, (2) address exploratory and analytical tasks targeted on specific scholarly groups, and (3) provide access and foster reuse of data sources.
-
-The design and development of the Web portal is iteratively informed by activities carried out by working groups, namely:
-
-\begin{itemize}
-    \item Data layer requirements (WP1, WP5, TB)
-    \item Software solutions (WP7, TB)
-    \item Infrastructure requirements (TB, project coordinator)
-    \item Sustainability plans (TB, project coordinator, third-parties)
-\end{itemize}
- 
-\textbf{Data layer requirements.} The socio-technical roadmap (see Deliverable D1.1) offers an overview of \emph{contents} relevant to pilots. It identifies shareable metadata, multi-modality aspects, and linking between data sources to be produced by project members and sources already available on the web. The roadmap provides us with the big picture of content requirements, possible overlaps between data created by pilots, and whether the development and access to certain data sources must be prioritised.
-
-% add also user stories here?
-
-Interviews with scholars participating in music research are carried out to by OU and UNIBO in order to frame the following aspects: (1) data-driven research questions, (2) \emph{data-sense making activities}, and (3) metadata requirements. Domain experts involved in Polifonia pilots are asked to detail their research methods, whether sources are already digitised or not, and whether computer-aided tasks are in scope. Content analysis of transcribed interviews is performed to frame research methods into sense-making primitives and define requirements of the final web interfaces. The latter include tools for exploratory data visualisation (EDA), features of the search engine, and User eXperience (UX) aspects. 
-
-\textbf{Software solutions.} Software solutions that are part of Polifonia ecosystem (see section \ref{ch:ecosystem}) are constantly surveyed by members of the technical board to frame the state of the art, and if needed, propose a intervention of Polifonia developers to fill the gaps. Software solutions include, among the others, (1) \emph{ontologies and vocabularies} that Polifonia data sources rely on (data layer), (2) \emph{software libraries} for Web development, data processing, and Linked Open Data manipulation, and (3) \emph{standards} for music annotation.
-
-A working group including representatives of pilots and the TB is dedicated to the development and maintenance of a \emph{registry} of musical resources on the web. The work extends and optimizes the existing musoW registry (\url{https://musow.kmi.open.ac.uk/}). The objectives of this activity are the following: (1) to develop sustainable solutions for updating and maintaining the online registry with metadata about data sources produced by the project, (2) to allow supervised crowdsourcing of metadata of other data sources and tools relevant to Polifonia objectives and (3) to provide the final web portal with a strategy for harvesting up to date data collections.
-
-Lastly, the activity is informed by the outputs of the Data Management Plan, which details \emph{data publication and dissemination strategies}. Such strategies are iteratively refined according to data volume and long-term preservation purposes, and affect the way the web portal accesses the data layer. 
-
-\textbf{Infrastructure requirements.} The TB defines suitable hosting and deployment solutions to guarantee optimal usage of available resources. We expect infrastructure requirements to vary along with the evolution of data layer requirements. Our work is inspired by previous works addressing similar situations \cite{kirstein2019european,kirstein2020piveau}, namely: distributed systems leveraging data sources stored in different locations, systematically updated by providers, and served according to different access and licensing options.
-
-Fig. \ref{fig:infrastructure} illustrates the high-level infrastructure of the mid-term/final version of the web portal and the dependencies with Work Packages that are involved.
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.7\textwidth]{images/webportal.png}
-    \caption{Overview of Polifonia Web Portal infrastructure}
-    \label{fig:infrastructure}
-\end{figure}
-
-% source of figure (slide 4): https://docs.google.com/presentation/d/1CWxGaiVnrQlq0oqxy4JiNJqwCuIFCuiK99HaoiEv2Ko/edit?usp=sharing
-
-As shown in the picture, we expect data sources to be shared by partners and external data providers in different ways, including SPARQL endpoints, REST APIs, Linked Data Fragments, and RDF data dumps. Among the sources, the musoW catalogue acts as a centralised registry recording cataloguing data of sources that will populate the web portal. 
-
-The web portal back-end includes a dedicated triplestore, which stores selected information harvested from data sources in the form of indexes and linksets. Specialised services perform pre-processing (cleaning), reconciliation (deduplication), and transformation activities (according to a crawling schema). 
-
-The middleware consists of a fully compliant Model-View-Controller (MVC) application, which handles the search engine, federated queries to external sources (when applicable), post-processing of data, and serves data as views.
-
-To deploy and deliver software quickly we use Docker.\footnote{\url{https://www.docker.com}}
-
-\textbf{Sustainability plans} The TB, in the person of the project coordinator, investigates sustainability plans for the Polifonia web portal. In particular, options for \emph{long-term access, hosting, and maintenance}, of the web portal and data sources may involve third-parties interested in contributing with trusty solutions. 
-
-It is worth noting that one of the advantages of completely relying on Linked Open Data and Semantic Web technologies includes the usage of \emph{persistent, dereferenceable HTTP URIs} for identifying resources, web documents, and data collections. That is, a end user will always be able to access web resources by using the same persistent URIs regardless their actual location and storage solutions. So doing, we plan to iteratively increment infrastructure requirements without affecting data access and reuse strategies.
-
+This section provides an introduction to the Polifonia pilots, discussed in the context to the collaborative methodology and tools.
 
 \section{[ORGANS] - A Knowledge Graph on History of Pipe Organs}\label{sec:pilot:organs}
 \todo[inline]{Please provide a summary of the pilot objectives, beneficiaries, and a description of the work done so far, with particular reference to collaborative work and exchange of expertise.}
+\textbf{Technology provider(s)}: WP2, WP4. Beneficiaries: KNAW, NIvO(external).
+
+\textbf{Pilot objectives}:
+
+\textbf{Work thus far}:
 
 \section{[BELLS] - Preservation of Historical Bell Heritage: dependencies between tangible and intangible}\label{sec:pilot:bells}
 \todo[inline]{Please provide a summary of the pilot objectives, beneficiaries, and a description of the work done so far, with particular reference to collaborative work and exchange of expertise.}
+
+\textbf{Technology provider(s)}: WP2, WP3, WP4. Beneficiaries: MiC –Ministry of Culture (ICBSA-Central Institute for Sound and Audiovisual Assets; ICCD-Central Institute for Cataloguing and Documentation)
+
+\textbf{Pilot objectives}:The widespread presence of bell structures  constitutes a cardinal element of the landscape in Italy, contributes to the definition of a soundscape,  performs a function of marker of the daily and festive / ritual time. The objective of the project is the representation of this  phenomenon through the realization of a database of existing sources through music and text extraction technologies (WP4,WP4) and  the construction and representation of surrounding knowledge  through ontology modeling and the realization of a knowledge graph (WP2). This will help the the analysis of the bell heritage to the wider context of a landscape and cultural heritage, both in its tangible and intangible aspects, and will be addressed to researchers, institutes that deal with the construction of information systems for the protection and enhancement of cultural heritage, local public bodies and other local actors, engaged in the protection, safeguard, use and enhancement of cultural heritage, also for the development and definition of landscape plans. The Pilot team is very heterogeneous: musicologists and ethnomusicologists, archivists, ethnoanthropologists, architects.
+
+\textbf{Work thus far}:The following activities have been carried out so far: elaboration of a scenario on GitHub relating to the needs of restoration and conservation in compliance with the performance and sound practices needs [https://github.com/polifonia-project/stories/Keoma:Architect]; analysis of the scenario and competency questions with ontology design experts during the first Maninpasta hackathon; identification of useful sources for the construction of a corpus of texts with linguistic experts during the second hackathon; elaboration of a second scenario on GitHub focusing on intangible heritage safeguarding practices [https://github.com/polifonia-project/stories/tree/main/Patrizia:ethnoantrhropologist]; development of a workflow for interviews and digitization of existing sound resources together with local Superintendences; identification of local partners (bell ringers associations and local experts in campanology); discussion about the  development of a bottom-up process of cooperation for the identification of vocabularies about  informal practices for the transmission of knowledge about sound practices and techniques.
 
 \section{[INTERLINK] - Interlinking of collections in digital music libraries and audiovisual archives}\label{sec:pilot:interlink}
 
@@ -89,18 +47,68 @@ Beneficaries: CNAM, Iremus, NUIG, BNF (external).
 
 \section{[TONALITIES] - Modal and tonal classification of Western notated music from the Renaissance to the 20th century}\label{sec:pilot:tonalities}
 \todo[inline]{Please provide a summary of the pilot objectives, beneficiaries, and a description of the work done so far, with particular reference to collaborative work and exchange of expertise.}
+\textbf{Technology provider(s)}: WP2, WP3, and WP5. Beneficiaries: musicians, students, academics (mainly digital musicologists and music analysts), amateur internet users.
+
+\textbf{Pilot objectives}: 
+This pilot investigates modal-tonal identification, exploration and classification of monophonic and polyphonic notated music from the Renaissance to the 20th century.
+
+\textbf{Work thus far}:
+corpus identification; design of a general scheme of software components; granular identification of potential components and deliverables; functional specifications sketched; progress in the definition of specific ontologies/controlled vocabularies; first attempts/tests of data entry interface; proposition of four stories relating to Tonalities, one of them (Sethus) chosen by Polifonia members as case-study and analysed/developed during the Maninpasta/hackathons; starting contacts and exchanges with the MEI community.
 
 \section{[TUNES] - Tunes analysis and classification}\label{sec:pilot:tunes}
 \todo[inline]{Please provide a summary of the pilot objectives, beneficiaries, and a description of the work done so far, with particular reference to collaborative work and exchange of expertise.}
 
+
+\textbf{Technology provider(s)}: 
+
+\textbf{Pilot objectives}:
+
+\textbf{Work thus far}:
+
 \section{[MUSICBO] - Knowledge graph of Bologna Musical Heritage}\label{sec:pilot:tunes}
 \todo[inline]{Please provide a summary of the pilot objectives, beneficiaries, and a description of the work done so far, with particular reference to collaborative work and exchange of expertise.}
+
+
+\textbf{Technology provider(s)}: 
+
+\textbf{Pilot objectives}:
+
+\textbf{Work thus far}:
 
 \section{[CHILD] - Exploration of musical heritage for scholarly enquiry: a case study on Music and Childhood}\label{sec:pilot:child}
 \todo[inline]{Please provide a summary of the pilot objectives, beneficiaries, and a description of the work done so far, with particular reference to collaborative work and exchange of expertise.}
 
+\textbf{Technology provider(s)}: WP4, WP5. Beneficiaries: Musicologists and historians of music, teachers, citizens. 
+
+\textbf{Pilot objectives}: Exploring a historical perspective on the part music has played in children’s lives through education, play and family and community practices, and how far such experiences differ across time, culture and gender. 
+Supporting music scholars from the formulation of a hypothesis to the discovery, collection, and curation of resources relevant to the enquiry. 
+
+\textbf{Work thus far}: exploration of the Listening Experience Database, Archive.org, and Gutenberg Project is under development with the goal of defining a corpus/registry of sources potentially relevant to the study. Analysis of requirements developed in interviews with domain experts and as part of the Maninpasta workshop. Stories and scenarios relevant to the pilot were developed (see the scenario Ortenz - Music and childhood\footnote{\url{https://github.com/polifonia-project/stories/blob/main/Ortenz:\%20Music\%20Historian/Ortenz\%20-\%20Music\%20and\%20childhood.md}})
+
+% Testing the extent to which it is possible to identify writings by children (such as letters and diaries) that offer first-hand evidence of their experience of music. Datasets/collections involved: Listening Experience Database, Archive.org, Gutenberg Project.  Pilot description: The musicological focus will be a case study of the historical experience of music in childhood, using life writing (letters, diaries, memoirs, travel writing) and other historical texts as sources for adult reflections on music heard in childhood, third-party observations on children’s engagement with music, and children’s own first-hand accounts. Those accounts will be linked and related to musical scores and relevant assets in the Polifonia knowledge graph. The case study will inform and evaluate a Web portal (developed in WP5), aggregating various outputs of the project into an interface enabling the exploration and analysis through the dimensions of themes, time, and space. A participatory approach in the design of the portal will ensure that the capabilities of the tool will meet recognized criteria of the scholar community, such as the collocation of contents within a controlled repertoire index and the characterisation of the content in terms of provenance, with appropriate references to documentary and bibliographic sources. The Web interface will allow the production and curation of citable e-scholarly objects. Potential/expected impact: The Web portal will support educational activities and research in music history. The case study will fill a musicological gap by addressing an aspect of music history that has received little scholarly attention (in contrast to the considerable scholarship by educationalists and ethnographers on contemporary children’s experience of music).
+
+
+
 \section{[MEETUPS] - Musical Meetups: the European musicianship flow}\label{sec:pilot:meetups}
 \todo[inline]{Please provide a summary of the pilot objectives, beneficiaries, and a description of the work done so far, with particular reference to collaborative work and exchange of expertise.}
 
+\textbf{Technology provider(s)}: WP4, WP5.
+Beneficiaries: musicologists and music historians (OU, UNIBO, and ICBSA). 
+
+\textbf{Pilot objectives}: This pilot focuses on supporting music historians and teachers by providing a Web tool that enables the exploration and visualisation of encounters between people in the musical world in Europe from c.1800 to c.1945, relying on information extracted from public domain books such as biographies, memoirs and travel writing, and open-access databases. Objective of the pilot is providing a Web tool that extracts relevant information from public domain texts and a user interface for mapping encounters between people in the musical world in Europe, c.1800-c.1945. 
+
+\textbf{Work thus far}: activities focusedon requirement analysis for the pilot. The Maninpasta workshop and independent activity streams produced three scenarios relevant to the pilot: Ortenz - Musical social network\footnote{\url{https://github.com/polifonia-project/stories/blob/main/Ortenz:\%20Music\%20Historian/Ortenz\%20-\%20Musical\%20social\%20network.md\#ortenz---musical-social-network}}, Sophia -- Musicians and their environment\footnote{https://github.com/polifonia-project/stories/blob/main/Sophia:\%20Musicologist/Sophia\%23MusiciansAndTheirEnvironment.md}, and David - Music Historian\footnote{\url{https://github.com/polifonia-project/stories/blob/main/David:\%20Music\%20Historian/David\%231_musichistorian.md}}.
+Ongoing work includes surveying existing databases which may provide the starting point for building a dataset of meetups, considering sources such as Wikipedia (DBpedia, Wikidata) and Linked Data resources such as the EventKG as well as ontologies and schemas for Event representation.
+Other datasets and collections involved for gathering sources of events are Archive.org, Gutenberg Project, Biblioteca Italiana, and BNF France. 
+%Pilot description: This pilot focuses on supporting music historians and teachers by providing a Web tool that enables the exploration and visualisation of encounters between people in the musical world in Europe from c.1800 to c.1945, relying on information extracted from public domain books such as biographies, memoirs and travel writing, and open-access databases. Such encounters were particularly significant before the period when musical ideas and influences were widely disseminated through broadcasting and recording technologies, and the collection of data about them will make it possible to trace key points of cultural and musical exchange and dissemination, and meetings that were catalysts for musical change. It may also reveal unexpected connections and relationships that cast new light on aspects of European music history. These encounters will be explored in a timeline and map interface. The tool will provide persistent, citable identifiers in order to support referencing in scholarship outputs. Potential/expected impact: Support educational activities and research in music history. The case study will fill a gap by enabling users to discover, index, and cite musical encounters and make them first-class citizens of musicology research.
+
+
+
 \section{[ACCESS] - Making musical performances accessible to people who are Deaf or hearing impaired}\label{sec:pilot:access}
 \todo[inline]{Please provide a summary of the pilot objectives, beneficiaries, and a description of the work done so far, with particular reference to collaborative work and exchange of expertise.}
+
+\textbf{Technology provider(s)}: 
+
+\textbf{Pilot objectives}:
+
+\textbf{Work thus far}:
