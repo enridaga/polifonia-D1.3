@@ -9,7 +9,7 @@ Data components types are the following:
 \item \textbf{Ontologies} -- produced in the context of the Polifonia project to support pilots and use cases, ontologies specify domain knowledge and are used as means for developing a shared understanding of the domain and as software artefacts applied in published datasets
 \item \textbf{Datasets} -- structured data offered following best practices in (Linked) Open Data publishing. If data was not produced as Linked Data, when possible, the resource is also published in its original format. Multiple ontologies can be applied and alternative Linked Data versions of the same source data are possible, to fit the needs of different use cases.
 \item \textbf{Repositories and corpora} -- collections of digital assets relevant to Polifonia use cases.
-\item \textbf{Knowledge Graph} -- a distributed but unifying view of musical cultural heritage knowledge, is a \textit{virtual} composition of Linked Data resources to be reused for large scale integration, for example, to support unified indexes for exploration and discovery\todo[inline,author=Enrico]{We say that there will be 1 single KG aggregating everything and that the nature of the KG should be distributed and there can be one system which indexes the data to support some use cases such as discovery and reuse.}
+\item \textbf{Knowledge Graph} -- a distributed but unifying view of musical cultural heritage knowledge, is a \textit{virtual} composition of Linked Data resources to be reused for large scale integration, for example, to support unified indexes for exploration and discovery. %\todo[inline,author=Enrico]{We say that there will be 1 single KG aggregating everything and that the nature of the KG should be distributed and there can be one system which indexes the data to support some use cases such as discovery and reuse.}
 \item \textbf{Services} -- Web APIs that expose reasoning and data processing capabilities. Services are run by Polifonia consortium members and instantiate specific components to the Open Web. % “Towards an open Web experience, not a “Facebook” experience” 
 Among those there are Linked Data services such as SPARQL endpoints -- live data services publishing the above components for querying with SPARQL.
 \item \textbf{Software libraries} -- reusable code produced by the project to support pilot activities.Software libraries are used by programmers in their own applications
@@ -17,6 +17,7 @@ Among those there are Linked Data services such as SPARQL endpoints -- live data
 \item \textbf{User interfaces} -- targeting domain experts, citizens, developed to support specific activities in the context of the Polifonia Pilots, user interfaces can be reused across similar applications targeting different datasets and scenarios
 \item \textbf{Experiments} -- code and dataset of scientific experiments used during the research activity of the project. Experiments are meant to be documented, reproducible, and linked to research outputs. However, experiments are not expected to produce code and data which is directly reusable. The developers may produce derived assets as independent components of the ecosystem
 \item \textbf{Applications} -- applications targeting specific use cases, possibly as direct outputs of the Pilots. Applications may reuse ecosystem components and function as demonstrators in tutorials and referenced by the documentation of the ecosystem.
+\item \textbf{Containers} -- which wrap applications or services ready to be deployed in a computing infrastructure (a developer's laptop or a cloud service).
 % \item User Interface components
 \item \textbf{Stories} -- requirements from the world of Musical Cultural Heritage preservation, exploitation, and scholarship; stories are the starting point of the collaborative methodology and the \textit{sense-making} layer of the Polifonia Ecosystemm, giving context and purpose to the components. Stories and scenarios are linked to relevant components of the ecosystem.
 \item \textbf{Tutorials} -- a showcase of the Polifonia Ecosystem through end-to-end tutorials, inspired from the Pilots and displaying the capabilities of the components in concrete applications. Tutorials are also an excellent starting point for developers.
@@ -27,12 +28,13 @@ Among those there are Linked Data services such as SPARQL endpoints -- live data
 
 \todo[inline]{IMAGE: Polifonia Ecosystem}
 
-
 One objective of the technical board is to identify issues preventing the interoperability of components and provide guidance on how to overcome them. Therefore, these component types are meant to be \textit{interlinked}. Inter-operability strategies are considered based on W3C and other industry standards for the development of distributed systems on the Web.
 These include: W3C specifications such as RDF, SPARQL protocol, Linked Data Platform and the Solid project but also OpenAPI, JSON, JSON-LD and related technologies.
 For a survey on  Web Technologies and their application for metadata aggregation in cultural heritage, we refer the reader to~\cite{freire2017web,daga2021integrating}.
 %In this section we illustrate technologies that may contribute to the ecosystem. First, we identify technologies that can contribute to the development of distributed infrastructures for cultural heritage, taking the Web as solution space and referring to recent research in the area~\cite{}.
-Finally, Table~\ref{tab:technologies} list technologies that are part of the background of consortium members and that may contribute towards supporting Polifonia applications.
+However, the Polifonia Ecosystem does not start as a blank sheet. 
+Consortium members bring expertise and technical solutions that can already be employed in such modular approach.
+Table~\ref{tab:technologies} list technologies that are part of the background of consortium members and that may contribute towards supporting Polifonia applications.
 
 %Interoperation strategies: Web technologies (OpenAPI, SPARQL, Solid, URLs, …) 
 % Registry 
